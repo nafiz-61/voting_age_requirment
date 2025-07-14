@@ -2,11 +2,11 @@ let userInput = prompt("Enter Your age");
 let age = +userInput;
 
 if (age >= 0 && age <= 17) {
-  alert("Not allow for Voting");
+  alert("❌ Underage: Not allowed to vote");
 } else if (age >= 18 && age <= 75) {
-  alert("Allow for voting");
+  alert("✅ Eligible: Allowed to vote");
 } else if (age >= 76 && age <= 100) {
-  alert("Your voting age has expired");
+  alert("⚠️ Too old: Voting age expired");
 } else {
-  alert("Not accepted");
+  alert("🔴 Invalid input handling");
 }
